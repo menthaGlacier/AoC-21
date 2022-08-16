@@ -19,9 +19,8 @@ int main()
 		exit(1);
 	}
 
-	while (!file.eof())
+	while (file >> reading)
 	{
-		file >> reading;
 		data.push_back(reading);
 	}
 
