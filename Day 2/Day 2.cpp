@@ -42,7 +42,7 @@ int main()
 
 	/* Part 2 */
 	file.clear(); /* Clear EOF flag and error state */
-	file.seekg(0); /* Return tot the beginning of the file */
+	file.seekg(0); /* Return to the beginning of the file */
 
 	int aim = 0;
 	pos = 0, depth = 0;
