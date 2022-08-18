@@ -4,6 +4,10 @@
 #include <bitset>
 #include <fstream>
 
+/* ADVENT OF CODE DAY 3 */
+/* ANDREY LITVINENKO */
+
+
 int main()
 {
 	const unsigned int codeLength = 12;
