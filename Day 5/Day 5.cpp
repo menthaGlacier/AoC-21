@@ -87,7 +87,6 @@ int main()
 	}
 
 	/* Part 1 */
-
 	while (!file.eof() && file.peek() != EOF)
 	{
 		int read;
