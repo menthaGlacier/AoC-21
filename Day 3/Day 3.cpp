@@ -1,12 +1,10 @@
 #include <iostream>
-#include <vector>
 #include <string>
 #include <bitset>
 #include <fstream>
 
 /* ADVENT OF CODE DAY 3 */
 /* ANDREY LITVINENKO */
-
 
 int main()
 {

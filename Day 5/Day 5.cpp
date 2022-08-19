@@ -1,7 +1,4 @@
 #include <iostream>
-#include <string>
-#include <array>
-
 #include <fstream>
 
 /* ADVENT OF CODE DAY 5 */
