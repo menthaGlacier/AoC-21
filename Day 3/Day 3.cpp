@@ -13,18 +13,13 @@ int main()
 	std::ifstream file;
 	std::string code;
 	int numOfReadings = 0;
-	int bitFrequency[codeLength];
+	int bitFrequency[codeLength] = {};
 
 	file.open("input");
 	if (!file.is_open())
 	{
 		std::cerr << "Error: couldn't open input file" << '\n';
 		exit(1);
-	}
-
-	for (int i = 0; i < codeLength; i++)
-	{
-		bitFrequency[i] = 0;
 	}
 
 	/* Part 1 */
