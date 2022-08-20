@@ -3,7 +3,7 @@
 #include <vector>
 #include <fstream>
 
-#include "Board.h"
+#include "Bingo.h"
 
 /* ADVENT OF CODE DAY 4 */
 /* ANDREY LITVINENKO */
@@ -12,7 +12,7 @@ int main()
 {
 	std::ifstream file;
 	std::vector<int> nums;
-	std::vector<Board> boards;
+	std::vector<Bingo> boards;
 
 	file.open("input");
 	if (!file.is_open())
@@ -31,7 +31,7 @@ int main()
 
 	while (!file.eof())
 	{
-		Board bingo;
+		Bingo bingo;
 		int read;
 
 		for (int i = 0; i < 5; i++)
@@ -46,6 +46,8 @@ int main()
 		boards.push_back(bingo);
 	}
 
+	file.close();
+
 	/* Part 1 */
 	int bestBoard = 0;
 	for (auto iter : nums)
@@ -53,7 +55,6 @@ int main()
 		for (int i = 0; i < boards.size(); i++)
 		{
 			boards[i].markMatching(iter);
-
 			if (boards[i].checkRows() || boards[i].checkColumns())
 			{
 				bestBoard = i;
@@ -78,32 +79,22 @@ int main()
 	}
 
 	std::pair<int, int> worstBoard; /* ID and win number */
-
 	for (auto iter : nums)
 	{
 		for (int i = 0; i < boards.size(); i++)
 		{
-
 			if (boards[i].boardWin)
 			{
 				continue;
 			}
 
 			boards[i].markMatching(iter);
-			
 			if (boards[i].checkRows() || boards[i].checkColumns())
 			{
 				worstBoard = std::make_pair(i, iter);
 				boards[i].boardWin = true;
-
 			}
 		}
-	}
-
-	/* Clear marked fields once again */
-	for (auto iter : boards)
-	{
-		iter.clear();
 	}
 
 	for (auto iter : nums)
@@ -122,4 +113,6 @@ int main()
 			}
 		}
 	}
+
+	return 0;
 }

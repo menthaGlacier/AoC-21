@@ -1,10 +1,10 @@
-#ifndef BOARD_H
-#define BOARD_H
+#ifndef BINGO_H
+#define BINGO_H
 
-class Board 
+class Bingo 
 {
 public:
-	Board();
+	Bingo();
 
 	int calculateSum();
 	bool checkColumns();
@@ -19,4 +19,4 @@ public:
 	bool boardWin;
 };
 
-#endif /* BOARD_H */
+#endif /* BINGO_H */

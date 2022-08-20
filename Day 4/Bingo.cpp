@@ -1,11 +1,11 @@
-#include "Board.h"
+#include "Bingo.h"
 
-Board::Board()
+Bingo::Bingo()
 {
 	clear();
 }
 
-int Board::calculateSum()
+int Bingo::calculateSum()
 {
 	int sum = 0;
 	for (int i = 0; i < 5; i++)
@@ -19,7 +19,7 @@ int Board::calculateSum()
 	return sum;
 }
 
-bool Board::checkRows()
+bool Bingo::checkRows()
 {
 	for (int i = 0; i < 5; i++)
 	{
@@ -39,7 +39,7 @@ bool Board::checkRows()
 	return false;
 }
 
-bool Board::checkColumns()
+bool Bingo::checkColumns()
 {
 	for (int i = 0; i < 5; i++)
 	{
@@ -58,7 +58,7 @@ bool Board::checkColumns()
 	return false;
 }
 
-void Board::clear()
+void Bingo::clear()
 {
 	boardWin = false;
 	for (int i = 0; i < 5; i++)
@@ -70,7 +70,7 @@ void Board::clear()
 	}
 }
 
-void Board::markMatching(int number)
+void Bingo::markMatching(int number)
 {
 	for (int i = 0; i < 5; i++)
 	{
