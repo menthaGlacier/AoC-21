@@ -2,6 +2,9 @@
 #include <vector>
 #include <fstream>
 
+/* ADVENT OF CODE DAY 6 */
+/* ANDREY LITVINENKO */
+
 int main()
 {
 	std::ifstream file;
@@ -26,7 +29,6 @@ int main()
 	for (int i = 0; i < 80; i++)
 	{
 		int newFish = 0;
-
 		for (auto& it : fish)
 		{
 			if (it == 0)
