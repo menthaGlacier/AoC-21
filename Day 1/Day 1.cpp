@@ -24,7 +24,6 @@ int main()
 		data.push_back(reading);
 	}
 
-	file.close();
 
 	/* Part 1 */
 	for (int i = 1; i < data.size(); i++)
@@ -57,4 +56,7 @@ int main()
 
 	std::cout << "Part 2" << "\n";
 	std::cout << "Total amount of increases: " << numOfIncreases << "\n";
+
+	file.close();
+	return 0;
 }

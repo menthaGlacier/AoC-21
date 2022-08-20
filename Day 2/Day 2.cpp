@@ -70,4 +70,5 @@ int main()
 	std::cout << "Result of (position * depth) is: " << pos * depth << "\n";
 
 	file.close();
+	return 0;
 }

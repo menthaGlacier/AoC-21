@@ -42,8 +42,6 @@ int main()
 		}
 	}
 
-	file.close();
-
 	std::bitset<codeLength> gamma, epsilon;
 	for (int i = 0; i < codeLength; i++)
 	{
@@ -65,6 +63,8 @@ int main()
 	std::cout << "Result of (gamma * epsilon) is: " <<
 		gamma.to_ulong() * epsilon.to_ulong() << "\n\n";
 
+	file.close();
+	return 0;
 }
 
 /* OLD SOLUTION */
@@ -150,8 +150,6 @@ int main()
 //		}
 //	}
 //
-//	file.close();
-//
 //	for (int i = 0; i < codeLength; i++)
 //	{
 //		if (frequency[i] > (numOfReadings / 2.0f))
@@ -169,4 +167,7 @@ int main()
 //
 //	delete[] frequency;
 //	delete[] gammaRate;
+//
+//	file.close();
+//	return 0;
 //}

@@ -227,7 +227,6 @@ int main()
 		}
 	}
 
-	file.close();
 
 	std::cout << "Part 2" << "\n";
 	std::cout << "Amount of overlaps is: " << countOverlaps(matrix, arrSize) << "\n";
@@ -238,4 +237,6 @@ int main()
 	}
 
 	delete[] matrix;
+	file.close();
+	return 0;
 }

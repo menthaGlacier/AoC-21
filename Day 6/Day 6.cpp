@@ -55,4 +55,7 @@ int main()
 	/* Part 2 */
 	/* Too much calculations and high memory usage,
 	this solution will be inefficient for this part */
+
+	file.close();
+	return 0;
 }

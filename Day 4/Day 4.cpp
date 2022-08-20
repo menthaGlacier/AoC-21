@@ -46,8 +46,6 @@ int main()
 		boards.push_back(bingo);
 	}
 
-	file.close();
-
 	/* Part 1 */
 	int bestBoard = 0;
 	for (auto iter : nums)
@@ -114,5 +112,6 @@ int main()
 		}
 	}
 
+	file.close();
 	return 0;
 }
