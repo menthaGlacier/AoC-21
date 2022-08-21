@@ -66,7 +66,7 @@ int main()
 		exit(1);
 	}
 
-	/* Part 1 and Part 2*/
+	/* Part 1 */
 	while (file.peek() != EOF)
 	{
 		int read;
