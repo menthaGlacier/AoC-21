@@ -66,7 +66,6 @@ int main()
 		exit(1);
 	}
 
-	/* Part 1 */
 	while (file.peek() != EOF)
 	{
 		int read;
@@ -74,6 +73,9 @@ int main()
 		file.ignore(1, ',');
 		crabs.push_back(read);
 	}
+
+	/* Part 1 */
+	/* The center of the numbers series is closer to all the numbers */
 
 	sort(crabs);
 	int median = getMedian(crabs);
@@ -86,9 +88,13 @@ int main()
 	std::cout << "Fuel consumption: " << fuel << "\n\n";
 
 	/* Part 2 */
+	/* As fuel consumption increases in arithmetic progression,
+	it is more efficient to "aim" the numbers at the arithmetic mean */
+
 	int mean = getMean(crabs); fuel = 0;
 	for (auto iter : crabs)
 	{
+		/* Arithmetic progression to find the fuel consumption */
 		int addRate = getAbs(iter - mean);
 		fuel += addRate * (addRate + 1) / 2.0;
 	}

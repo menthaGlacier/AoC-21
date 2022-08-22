@@ -108,7 +108,7 @@ int main()
 
 		file.ignore(1);
 
-		/* going by y-axis */
+		/* Going by y-axis */
 		if (begin.first == end.first)
 		{
 			if (beginIsMax(begin, end, 2))
@@ -128,7 +128,7 @@ int main()
 			}
 		}
 
-		/* going by x-axis */
+		/* Going by x-axis */
 		else if (begin.second == end.second)
 		{
 			if (beginIsMax(begin, end, 1))
