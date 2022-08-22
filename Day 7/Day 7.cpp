@@ -89,7 +89,7 @@ int main()
 
 	/* Part 2 */
 	/* As fuel consumption increases in arithmetic progression,
-	it is more efficient to "aim" the numbers at the arithmetic mean */
+	it is more efficient to "aim" the numbers at the mean */
 
 	int mean = getMean(crabs); fuel = 0;
 	for (auto iter : crabs)
