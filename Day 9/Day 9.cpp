@@ -148,7 +148,7 @@ int main()
 
 	std::cout << "Part 1" << "\n";
 	std::cout << "Product of three largest basins: " << 
-		largestBasins[0] * largestBasins[1] * largestBasins[2] << "n";
+		largestBasins[0] * largestBasins[1] * largestBasins[2] << "\n";
 
 	file.close();
 	return 0;
